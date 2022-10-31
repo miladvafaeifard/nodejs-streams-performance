@@ -8,3 +8,15 @@ Benchmarking run
 
 Note! ApacheBench (ab) is installed on macOS by default. You can check that by using
 ab -h [for help/information] [for checking ab version] ab -V Ref: https://vyspiansky.github.io/2019/12/02/apache-bench-for-load-testing/
+
+or if wrk is installed, run:
+
+`wrk -t 10 -c 100 -d 30s --timeout 1m http://localhost:8000/`
+
+## Without Stream
+
+![link](./docs/without-stream.png)
+
+## Stream
+
+![link](./docs/stream.png)
